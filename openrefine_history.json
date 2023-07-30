@@ -1,0 +1,1534 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MarketName",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MarketName using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Website",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Website using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Facebook",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Facebook using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Twitter",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Twitter using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Twitter",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Twitter using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Youtube",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Youtube using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OtherMedia",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OtherMedia using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "city",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column city using expression value.trim()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "street",
+    "newColumnName": "Street",
+    "description": "Rename column street to Street"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "city",
+    "newColumnName": "City",
+    "description": "Rename column city to City"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "County",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column County using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "State",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column State using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "grel:value.replace(/=/, \"-\")\n.replace(/,\\s*\\w*/, \"\")\n.replace(/!@#$%?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column City using expression grel:value.replace(/=/, \"-\")\n.replace(/,\\s*\\w*/, \"\")\n.replace(/!@#$%?/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updateTime",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updateTime using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updateTime",
+    "expression": "grel:value.toDate('dd/MM/yyyy HH:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updateTime using expression grel:value.toDate('dd/MM/yyyy HH:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "zip",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column zip using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season1Date",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Season1Date using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season1Time",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Season1Time using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Location",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Location using expression value.trim()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season1Time",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season1Time by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season4Time",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season4Time by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season3Time",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season3Time by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season2Time",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season2Time by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season1Time 1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Season1Time 1 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season1Time 2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Season1Time 2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "County",
+    "expression": "grel:value.replace(/!@#$%=?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column County using expression grel:value.replace(/!@#$%=?/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "State",
+    "expression": "grel:value.replace(/!@#$%=?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column State using expression grel:value.replace(/!@#$%=?/, \"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Woodstock",
+          "woodstock",
+          "WOODSTOCK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Woodstock"
+      },
+      {
+        "from": [
+          "Brooklyn",
+          "BROOKLYN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brooklyn"
+      },
+      {
+        "from": [
+          "Akron",
+          "AKRON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Akron"
+      },
+      {
+        "from": [
+          "FOUNTAIN",
+          "Fountain"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fountain"
+      },
+      {
+        "from": [
+          "Los Angeles",
+          "LOS ANGELES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Angeles"
+      },
+      {
+        "from": [
+          "St. Louis",
+          "St Louis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Louis"
+      },
+      {
+        "from": [
+          "Canton",
+          "canton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Canton"
+      },
+      {
+        "from": [
+          "Huntington",
+          "huntington"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huntington"
+      },
+      {
+        "from": [
+          "New Haven",
+          "NEW HAVEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Haven"
+      },
+      {
+        "from": [
+          "Land O Lakes",
+          "Land O' Lakes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Land O Lakes"
+      },
+      {
+        "from": [
+          "sun city west",
+          "Sun City West"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sun City West"
+      },
+      {
+        "from": [
+          "Greenville",
+          "GREENVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Greenville"
+      },
+      {
+        "from": [
+          "GLENDALE",
+          "Glendale"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glendale"
+      },
+      {
+        "from": [
+          "MILLERSBURG",
+          "Millersburg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Millersburg"
+      },
+      {
+        "from": [
+          "Port Townsend",
+          "port townsend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Port Townsend"
+      },
+      {
+        "from": [
+          "DeWitt",
+          "Dewitt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DeWitt"
+      },
+      {
+        "from": [
+          "PARADISE",
+          "Paradise"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Paradise"
+      },
+      {
+        "from": [
+          "Glencoe",
+          "GLENCOE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glencoe"
+      },
+      {
+        "from": [
+          "Madison",
+          "MADISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madison"
+      },
+      {
+        "from": [
+          "Berryville",
+          "berryville"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Berryville"
+      },
+      {
+        "from": [
+          "Leland",
+          "leland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Leland"
+      },
+      {
+        "from": [
+          "Fort Pierce",
+          "fort pierce"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fort Pierce"
+      },
+      {
+        "from": [
+          "Clayton",
+          "clayton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clayton"
+      },
+      {
+        "from": [
+          "Montgomery",
+          "MONTGOMERY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Montgomery"
+      },
+      {
+        "from": [
+          "Milton",
+          "milton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Milton"
+      },
+      {
+        "from": [
+          "Quincy",
+          "QUINCY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quincy"
+      },
+      {
+        "from": [
+          "DuBois",
+          "Dubois"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DuBois"
+      },
+      {
+        "from": [
+          "Greenwood",
+          "Greenwood  Greenwood"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Greenwood"
+      },
+      {
+        "from": [
+          "CENTER POINT",
+          "Center Point"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Center Point"
+      },
+      {
+        "from": [
+          "Plainfield",
+          "plainfield"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plainfield"
+      },
+      {
+        "from": [
+          "Findlay",
+          "FINDLAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Findlay"
+      },
+      {
+        "from": [
+          "EVERGREEN",
+          "Evergreen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Evergreen"
+      },
+      {
+        "from": [
+          "Tucson",
+          "TUCSON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tucson"
+      },
+      {
+        "from": [
+          "Monticello",
+          "MONTICELLO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monticello"
+      },
+      {
+        "from": [
+          "Arlington",
+          "Arlington."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arlington"
+      },
+      {
+        "from": [
+          "Cambridge",
+          "cambridge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cambridge"
+      },
+      {
+        "from": [
+          "Honoka'a",
+          "Honokaa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Honoka'a"
+      },
+      {
+        "from": [
+          "Wheatland",
+          "wheatland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wheatland"
+      },
+      {
+        "from": [
+          "New Paltz",
+          "New paltz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Paltz"
+      },
+      {
+        "from": [
+          "DALEVILLE",
+          "Daleville"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daleville"
+      },
+      {
+        "from": [
+          "Lancaster",
+          "lancaster"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lancaster"
+      },
+      {
+        "from": [
+          "Columbus",
+          "COLUMBUS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Columbus"
+      },
+      {
+        "from": [
+          "PASADENA",
+          "Pasadena"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pasadena"
+      },
+      {
+        "from": [
+          "Mt Airy",
+          "Mt. Airy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mt. Airy"
+      },
+      {
+        "from": [
+          "Augusta",
+          "AUGUSTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Augusta"
+      },
+      {
+        "from": [
+          "Forest Park",
+          "Park Forest"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forest Park"
+      },
+      {
+        "from": [
+          "Punta Gorda",
+          "punta gorda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Punta Gorda"
+      },
+      {
+        "from": [
+          "CLARKSBURG",
+          "Clarksburg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clarksburg"
+      },
+      {
+        "from": [
+          "LIMA",
+          "Lima"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lima"
+      },
+      {
+        "from": [
+          "Somerset",
+          "SOMERSET"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Somerset"
+      },
+      {
+        "from": [
+          "Miami",
+          "miami"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Miami"
+      },
+      {
+        "from": [
+          "YELLOW SPRINGS",
+          "Yellow Springs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yellow Springs"
+      },
+      {
+        "from": [
+          "Schenectady",
+          "SCHENECTADY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schenectady"
+      },
+      {
+        "from": [
+          "Mobile",
+          "MOBILE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mobile"
+      },
+      {
+        "from": [
+          "Saratoga Springs",
+          "Saratoga springs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saratoga Springs"
+      },
+      {
+        "from": [
+          "Dundee",
+          "DUNDEE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dundee"
+      },
+      {
+        "from": [
+          "St Johnsbury",
+          "St. Johnsbury"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Johnsbury"
+      },
+      {
+        "from": [
+          "Huntsville",
+          "HUNTSVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huntsville"
+      },
+      {
+        "from": [
+          "Canon CIty",
+          "Canon City"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Canon CIty"
+      },
+      {
+        "from": [
+          "Ashland",
+          "ashland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ashland"
+      },
+      {
+        "from": [
+          "Lawrenceville",
+          "LAwrenceville"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lawrenceville"
+      },
+      {
+        "from": [
+          "GEORGIANA",
+          "Georgiana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Georgiana"
+      },
+      {
+        "from": [
+          "Middleton",
+          "MIDDLETON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Middleton"
+      },
+      {
+        "from": [
+          "Troy",
+          "TROY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Troy"
+      },
+      {
+        "from": [
+          "Olney",
+          "OLNEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Olney"
+      },
+      {
+        "from": [
+          "HOpe",
+          "Hope"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hope"
+      },
+      {
+        "from": [
+          "ORLAND",
+          "Orland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orland"
+      },
+      {
+        "from": [
+          "Salt Lake City",
+          "SALT LAKE CITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salt Lake City"
+      },
+      {
+        "from": [
+          "Osceola",
+          "osceola"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Osceola"
+      },
+      {
+        "from": [
+          "Homewood",
+          "HOMEWOOD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Homewood"
+      },
+      {
+        "from": [
+          "Birmingham",
+          "BIRMINGHAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Birmingham"
+      },
+      {
+        "from": [
+          "San Francisco",
+          "SAN FRANCISCO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Francisco"
+      },
+      {
+        "from": [
+          "Fonda",
+          "fonda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fonda"
+      },
+      {
+        "from": [
+          "Marietta",
+          "MARIETTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marietta"
+      },
+      {
+        "from": [
+          "spartanburg",
+          "Spartanburg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spartanburg"
+      },
+      {
+        "from": [
+          "Henrico",
+          "henrico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Henrico"
+      },
+      {
+        "from": [
+          "Palmyra",
+          "PALMYRA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Palmyra"
+      },
+      {
+        "from": [
+          "St Anthony",
+          "St. Anthony"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Anthony"
+      },
+      {
+        "from": [
+          "OAKDALE",
+          "Oakdale"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oakdale"
+      },
+      {
+        "from": [
+          "Long Beach",
+          "LONG BEACH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Long Beach"
+      },
+      {
+        "from": [
+          "Macon",
+          "macon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Macon"
+      },
+      {
+        "from": [
+          "WEST BEND",
+          "West Bend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "West Bend"
+      },
+      {
+        "from": [
+          "Oregon",
+          "OREGON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oregon"
+      },
+      {
+        "from": [
+          "MCCOMB",
+          "McComb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "McComb"
+      },
+      {
+        "from": [
+          "Jacksonville",
+          "JACKSONVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jacksonville"
+      },
+      {
+        "from": [
+          "Monument",
+          "monument"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monument"
+      },
+      {
+        "from": [
+          "Watertown",
+          "WATERTOWN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Watertown"
+      },
+      {
+        "from": [
+          "Frankfort",
+          "frankfort"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Frankfort"
+      },
+      {
+        "from": [
+          "Paris",
+          "paris"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Paris"
+      },
+      {
+        "from": [
+          "Stanley",
+          "STANLEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stanley"
+      }
+    ],
+    "description": "Mass edit cells in column City"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "County",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DeKalb",
+          "Dekalb",
+          "DEKALB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DeKalb"
+      },
+      {
+        "from": [
+          "Santa Barbara",
+          "SANTA BARBARA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Barbara"
+      },
+      {
+        "from": [
+          "Washington",
+          "WASHINGTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Washington"
+      },
+      {
+        "from": [
+          "Mobile",
+          "MOBILE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mobile"
+      },
+      {
+        "from": [
+          "Fresno",
+          "FRESNO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fresno"
+      },
+      {
+        "from": [
+          "Los Angeles",
+          "LOS ANGELES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Angeles"
+      },
+      {
+        "from": [
+          "Humboldt",
+          "HUMBOLDT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Humboldt"
+      },
+      {
+        "from": [
+          "Lee",
+          "LEE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lee"
+      },
+      {
+        "from": [
+          "Butler",
+          "BUTLER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Butler"
+      },
+      {
+        "from": [
+          "Midland",
+          "midland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Midland"
+      },
+      {
+        "from": [
+          "Alameda",
+          "ALAMEDA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alameda"
+      },
+      {
+        "from": [
+          "Shasta",
+          "SHASTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shasta"
+      },
+      {
+        "from": [
+          "St. Louis City",
+          "St. Louis city"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Louis City"
+      },
+      {
+        "from": [
+          "Jefferson",
+          "JEFFERSON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jefferson"
+      },
+      {
+        "from": [
+          "Henry",
+          "HENRY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Henry"
+      },
+      {
+        "from": [
+          "Kern",
+          "KERN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kern"
+      },
+      {
+        "from": [
+          "Butte",
+          "BUTTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Butte"
+      },
+      {
+        "from": [
+          "Shelby",
+          "SHELBY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shelby"
+      },
+      {
+        "from": [
+          "Tuolumne",
+          "TUOLUMNE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tuolumne"
+      },
+      {
+        "from": [
+          "Orange",
+          "ORANGE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orange"
+      },
+      {
+        "from": [
+          "Sonoma",
+          "SONOMA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sonoma"
+      },
+      {
+        "from": [
+          "ELMORE",
+          "Elmore"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Elmore"
+      },
+      {
+        "from": [
+          "Wilcox",
+          "WILCOX"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wilcox"
+      },
+      {
+        "from": [
+          "LaGrange",
+          "Lagrange"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LaGrange"
+      },
+      {
+        "from": [
+          "San Luis Obispo",
+          "SAN LUIS OBISPO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Luis Obispo"
+      },
+      {
+        "from": [
+          "Inyo",
+          "INYO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inyo"
+      },
+      {
+        "from": [
+          "El Paso",
+          "EL Paso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Paso"
+      },
+      {
+        "from": [
+          "Monroe",
+          "MONROE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Monroe"
+      }
+    ],
+    "description": "Mass edit cells in column County"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season1Date",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season1Date by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season2Date",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season2Date by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season3Date",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season3Date by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Season4Date",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Season4Date by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "County",
+    "expression": "grel:value.replace(/=/, \"-\") .replace(/,\\s*\\w*/, \"\") .replace(/!@#$%?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column County using expression grel:value.replace(/=/, \"-\") .replace(/,\\s*\\w*/, \"\") .replace(/!@#$%?/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "State",
+    "expression": "grel:value.replace(/=/, \"-\") .replace(/,\\s*\\w*/, \"\") .replace(/!@#$%?/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column State using expression grel:value.replace(/=/, \"-\") .replace(/,\\s*\\w*/, \"\") .replace(/!@#$%?/, \"\")"
+  }
+]
